@@ -1,0 +1,50 @@
+<resources>
+    <!-- Existing strings -->
+    <string name="app_name">MealMate</string>
+    <string name="title_home">Home</string>
+    <string name="title_recipes">Recipes</string>
+    <string name="title_grocery">Grocery</string>
+    <string name="title_profile">Profile</string>
+    <string name="add_recipe">Add Recipe</string>
+    <string name="recipe_image">Recipe image</string>
+    <string name="text_no_recipes">No recipes found</string>
+    <string name="search_recipes">Search recipes</string>
+    <string name="recipe_details">Recipe Details</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="instructions">Instructions</string>
+    <string name="error_recipe_name_empty">Please enter a recipe name</string>
+    <string name="error_ingredients_empty">Please enter ingredients</string>
+    <string name="error_instructions_empty">Please enter instructions</string>
+    <string name="recipe_saved">Recipe saved successfully</string>
+    <string name="button_logout">Logout</string>
+    <string name="anonymous_user">Anonymous User</string>
+
+    <!-- Grocery List Strings -->
+    <string name="add_new_item">Add New Item</string>
+    <string name="item_name">Item Name</string>
+    <string name="category">Category</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_item_name_empty">Please enter an item name</string>
+    <string name="item_deleted">Item deleted</string>
+    <string name="undo">Undo</string>
+    
+    <string-array name="grocery_categories">
+        <item>Produce</item>
+        <item>Dairy</item>
+        <item>Meat</item>
+        <item>Bakery</item>
+        <item>Frozen</item>
+        <item>Canned Goods</item>
+        <item>Dry Goods</item>
+        <item>Beverages</item>
+        <item>Snacks</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- New strings for recipe adding -->
+    <string name="recipe_name">Recipe Name</string>
+    <string name="mark_as_favorite">Mark as favorite</string>
+    <string name="save_recipe">Save Recipe</string>
+    <string name="select_image">Select Image</string>
+</resources>
