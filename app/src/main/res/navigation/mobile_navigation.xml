@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.mealmate.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_navigation_home_to_addRecipeActivity"
+            app:destination="@id/addRecipeActivity" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_grocery"
+            app:destination="@id/navigation_grocery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_recipes"
+        android:name="com.example.mealmate.ui.recipes.RecipesFragment"
+        android:label="@string/title_recipes"
+        tools:layout="@layout/fragment_recipes">
+        <action
+            android:id="@+id/action_navigation_recipes_to_addRecipeActivity"
+            app:destination="@id/addRecipeActivity" />
+        <action
+            android:id="@+id/action_navigation_recipes_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_grocery"
+        android:name="com.example.mealmate.ui.grocery.GroceryFragment"
+        android:label="@string/title_grocery"
+        tools:layout="@layout/fragment_grocery" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.mealmate.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <activity
+        android:id="@+id/addRecipeActivity"
+        android:name="com.example.mealmate.ui.recipes.AddRecipeActivity"
+        android:label="@string/title_add_recipe" />
+
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.example.mealmate.ui.recipes.RecipeDetailFragment"
+        android:label="@string/recipe_details"
+        tools:layout="@layout/fragment_recipe_detail">
+        <argument
+            android:name="recipeId"
+            app:argType="long" />
+    </fragment>
+</navigation>
